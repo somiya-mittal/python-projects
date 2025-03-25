@@ -1,0 +1,18 @@
+print("simple calculator")
+
+num1= float(input("Enter first number here: "))
+num2= float(input("Enter a second number here :"))
+
+print("press 1 for addition \npress 2 for the subtraction \npress 3 for the multiplication \npress 4 for multiplication")
+
+choice = str(input("enter your choice from 1-4: "))
+if choice == "+":
+    print( "The addition of the given two numbers is  ",num1+num2)
+elif choice == "-":
+      print("The subtraction of the given two numbers is  ",num1-num2)
+elif choice == "*":
+      print("The multiplication of the given two numbers is  ",num1*num2)
+elif choice == "/":
+      print("The division of the given two numbers is  ",num1/num2)
+else :
+      print("Invalid Input")
