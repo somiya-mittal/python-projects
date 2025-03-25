@@ -1,0 +1,12 @@
+from mpmath import mp 
+mp.dps =1000001
+pi_digits= str(mp.pi)[2:]
+def search_pi(number):
+    number=str(number)
+    position = pi_digits.find(number)
+    
+    if position != -1:
+        print(f"Found {number} at {position + 1} position in the first 1 million digits of pi")
+    else:
+        print(f"{number} is not present in the first 1 million digits of pi")
+search_pi(999999)
