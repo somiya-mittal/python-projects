@@ -1,0 +1,6 @@
+import random
+
+def pi(n):
+    return 4 * sum(random.random()**2 + random.random()**2 <= 1 for _ in range(n)) / n
+
+print(f"Estimated π: {pi(10_000_000)}")
